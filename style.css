@@ -1,0 +1,287 @@
+/* Poppins Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General styles resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+ul,
+ol {
+    list-style: none;
+}
+/* ------------------------------------------------ */
+
+/* Header */
+header {
+    display: flex;
+    min-height: 100vh;
+}
+.hero-image {
+    min-height: 100vh;
+    width: 40%;
+}
+
+.hero-image img {
+    height: 100vh;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 3rem;
+}
+/* Navbar */
+.nav-links {
+    margin-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.nav-links hr {
+    width: 30rem;
+    height: 3px;
+    background: #000000;
+}
+
+.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #121111d6;
+}
+
+/* Section-1 */
+
+.section-1 {
+    height: 55%;
+}
+
+.hero-heading {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.big-text {
+    font-size: 16rem;
+    font-weight: bold;
+    line-height: 0.7;
+    letter-spacing: 2rem;
+}
+
+.big-text p:first-child {
+    color: transparent;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.big-text p:last-child {
+    position: relative;
+    left: 10rem;
+}
+
+.right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    height: 75%;
+}
+
+.inner .text {
+    font-size: 4rem;
+    align-self: flex-end;
+    color: #2f2f2fd5;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta {
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta > div {
+    align-self: center;
+}
+
+.btn {
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+    background: #2f2f2f;
+    color: #f1f1f1;
+}
+
+/* Section-2 */
+
+.section-2 {
+    height: 45%;
+    display: flex;
+    font-family: 'Poppins', 'sans-serif';
+}
+.cart-1 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: space-around;
+    color: #2f2f2f;
+}
+.list-items span {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    background: #2f2f2f;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.list-items span::after {
+    content: '';
+    display: inline-block;
+    height: 100px;
+    width: 2px;
+    background: #2f2f2f;
+    position: absolute;
+    left: 0.4rem;
+}
+.active-2 span::after {
+    height: 0;
+}
+.active {
+    color: #000;
+}
+.active span {
+    background: #000;
+}
+.active span:after {
+    background: #000;
+}
+
+/* cart */
+
+.cart-1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cart-2 {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    width: 60%;
+}
+.cart-2 p {
+    font-size: 2.3rem;
+    line-height: 1.3;
+}
+.quotes {
+    width: 50px;
+}
+
+.image2 {
+    height: 25rem;
+    width: 50rem;
+}
+
+.cart-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    width: 15%;
+}
+.arrow {
+    height: 25rem;
+}
+
+@media only screen and (max-width: 95em) {
+    body {
+        background: linear-gradient(#000000b3, #000000b3),
+            url('images/bg1.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+    * {
+        color: #ffffffcd !important;
+    }
+    .icon {
+        background-color: #ffffff;
+    }
+    .hero-image {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+    .inner {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 65em) {
+    .hero-heading {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .inner {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text {
+        align-items: flex-end;
+    }
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    .cart-1 {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+}
