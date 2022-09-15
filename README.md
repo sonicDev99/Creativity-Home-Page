@@ -17,11 +17,7 @@
 
 ---
 
-<a href='#'>
-  
-## 👉 <img src='https://img.shields.io/badge/Live_preview-blue?style=for-the-badge'>
-  
-</a>
+## 👉 [![homepage](https://img.shields.io/badge/Live_preview-blue?style=for-the-badge)](https://poetic-salmiakki-8840fa.netlify.app/ 'Redirect to homepage')
 
 ---
 
